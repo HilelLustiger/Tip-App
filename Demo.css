@@ -1,0 +1,323 @@
+@media (max-width: 2000px) {
+
+    /* ---------------------------------------- header section ---------------------------------------- */
+    #head {
+        height: 80px;
+        margin: 25px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .infoBox {
+        border: black;
+        background-color: aliceblue;
+        width: 180px;
+        flex-shrink: 1;
+        margin-left: 10px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .infoBox:nth-of-type(1) {
+        margin-left: 0;
+    }
+
+    .infoBox h1 {
+        font-size: small;
+    }
+
+    .infoBox span {
+        font-size: x-large;
+        font-weight: 600;
+    }
+
+
+    /* ---------------------------------------- main sections ---------------------------------------- */
+    #displays {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+        margin: 0 auto;
+        justify-content: space-between;
+        margin: 25px;
+    }
+
+    h2 {
+        font-size: x-large;
+        font-weight: 700;
+    }
+
+    /* ----------------------------- Money section ----------------------------- */
+
+    #money {
+        flex: 1 3;
+        flex-basis: 280px;
+        max-width: 100%;
+        margin-left: 25px;
+        background-color: white;
+        padding: 5px;
+    }
+
+    .coinBar {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+    }
+
+    .buttons {
+        flex-basis: 320px;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        padding: 5px;
+        background-color: rgb(227, 225, 225);
+        align-items: center;
+        font-weight: 600;
+        margin-left: 5px;
+    }
+
+    .decBtn,
+    .incBtn {
+        width: 200%;
+        transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+
+    }
+
+    .decBtn:hover,
+    .decBtn:focus,
+    .incBtn:hover,
+    .incBtn:focus {
+        background-color: rgb(240, 238, 238);
+    }
+
+    .num {
+        width: 100%;
+    }
+
+    .coin {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 130px;
+        font-weight: 600;
+        font-size: small;
+        background-color: rgb(240, 238, 238);
+    }
+
+    #calBtn {
+        margin-top: 10px;
+        display: flex;
+        background-color: green;
+        justify-content: space-around;
+    }
+
+    #calBtn:hover {
+        background-color: rgb(1, 105, 1);
+    }
+
+
+
+    /* ----------------------------- Waiters section ----------------------------- */
+
+    #waiter {
+        flex: 2 1;
+        flex-basis: 340px;
+        max-width: 100%;
+        padding: 5px;
+        background-color: white;
+    }
+
+    #listHeader {
+        display: flex;
+        padding-bottom: 5px;
+    }
+
+    .listTitle {
+        display: flex;
+        margin-top: 5px;
+        padding: 5px;
+        transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+
+    }
+
+    .listTitle:hover {
+        background-color: rgb(240, 238, 238);
+    }
+
+    .WaitersNames {
+        width: 170px;
+        margin-left: 15px;
+        font-weight: 700;
+    }
+
+    /* .listTitle span:nth-of-type(1) {
+        
+    } */
+
+    .listTitle span:nth-of-type(2) {
+        width: 100%;
+        font-weight: 300;
+        margin-left: 10px;
+    }
+
+    .badge {
+        background-color: #084887;
+    }
+
+    img {
+        width: 30px;
+    }
+
+    .coinsDetails {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 5px 5px 20px;
+        display: none;
+    }
+
+    .coinContainer {
+        min-width: 65px;
+        text-align: center;
+        background-color: rgb(240, 238, 238);
+        border-radius: 10px;
+    }
+
+    #waiterForm {
+        display: none;
+        padding: 5px 5px 5px 15px;
+    }
+
+    .formInputs {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .formInput {
+        /* max-width: 330px; */
+        flex-basis: 48%;
+    }
+
+    #NewWaiterBtns {
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-around;
+    }
+
+    #ConfirmNewWaiter {
+        width: 150px
+    }
+
+    #CancelWaiterBtn {
+        width: 150px;
+        background-color: red;
+    }
+
+    #CancelWaiterBtn:hover,
+    #CancelWaiterBtn:focus {
+        background-color: rgb(164, 5, 5);
+        color: #ffffff;
+    }
+
+}
+
+
+
+
+
+@media (max-width: 780px) {
+
+    /* ---------------------------------------- header section ---------------------------------------- */
+    #head {
+        display: none;
+    }
+
+    /* ---------------------------------------- main sections ---------------------------------------- */
+
+    #displays {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    #money {
+        flex: 1 1.5;
+        flex-basis: 450px;
+        max-width: 100%;
+        margin-top: 25px;
+        margin-left: 0;
+        background-color: white;
+    }
+
+    .coinBar {
+        display: none;
+    }
+
+    #calBtn {
+        display: none;
+    }
+
+    #waiter {
+        flex: 2;
+        flex-basis: 400px;
+        max-width: 100%;
+        background-color: white
+    }
+
+    #WaitesrList {
+        display: none;
+        height: 100%;
+    }
+}
+
+.MyButton {
+    align-items: center;
+    background-color: #0A66C2;
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 480px;
+    min-height: 40px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+}
+
+.MyButton:hover,
+.MyButton:focus {
+    background-color: #16437E;
+    color: #ffffff;
+}
+
+@media (max-width: 570px) {
+    #waiter {
+        background-color: pink;
+    }
+}
+
+
+@media (max-width: 350px) {
+    #waiter {
+        background-color: red;
+    }
+}
