@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="Demo.css">
+</head>
+
+<body style="background-color: rgb(227, 225, 225)">
+    <div id="head">
+        <div class="infoBox rounded" id="infoBoxHours" style="background-color: #084887">
+            <h1>Total Hours</h1>
+            <span id="infoBoxHoursText">0</span>
+        </div>
+        <div class="infoBox rounded" id="infoBoxWage" style="background-color: white">
+            <h1>Hourly Wage</h1>
+            <span id="infoBoxWageText">0</span>
+        </div>
+        <div class="infoBox rounded" id="infoBoxMoney" style="background-color: #909CC2">
+            <h1>Total Tips</h1>
+            <span id="infoBoxMoneyText">0</span>
+        </div>
+        <div class="infoBox rounded" id="infoBoxRest" style="background-color: #F9AB55">
+            <h1>Resturant Tax</h1>
+            <span id="infoBoxRestText">0</span>
+        </div>
+        <div class="infoBox rounded" id="infoBoxShift" style="background-color: #F58A07">
+            <h1>Shift Manager Tax</h1>
+            <span id="infoBoxShiftText">0</span>
+        </div>
+    </div>
+    <div id="displays">
+        <div id="waiter" class="rounded">
+            <div id="listDisplay">
+                <div id="listHeader">
+                    <h2 class="container">Waiters List</h2>
+                    <button class="MyButton" id="AddBtn" role="button">Add Waiter</button>
+                </div>
+                <div id="list">
+                    <!-- <div>
+                        <div class="listTitle rounded">
+                            <span>Resturant</span>
+                            <span>description</span>
+                            <span class="badge" style="background-color: #084887">Type</span>
+                        </div>
+                        <div class="coinsDetails">
+                            <div class="coinContainer">
+                                <img src="cash.png">
+                                <span>1</span>
+                                <p>0</p>
+                            </div>
+                            <div class="coinContainer">
+                                <img src="cash.png">
+                                <span>2</span>
+                                <p>0</p>
+                            </div>
+                            <div class="coinContainer">
+                                <img src="cash.png">
+                                <span>5</span>
+                                <p>0</p>
+                            </div>
+                            <div class="coinContainer">
+                                <img src="cash.png">
+                                <span>10</span>
+                                <p>0</p>
+                            </div>
+                            <div class="coinContainer">
+                                <img src="cash.png">
+                                <span>20</span>
+                                <p>0</p>
+                            </div>
+                            <div class="coinContainer">
+                                <img src="cash.png">
+                                <span>50</span>
+                                <p>0</p>
+                            </div>
+                            <div class="coinContainer">
+                                <img src="cash.png">
+                                <span>100</span>
+                                <p>0</p>
+                            </div>
+                            <div class="coinContainer">
+                                <img src="cash.png">
+                                <span>200</span>
+                                <p>0</p>
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+            <form id="waiterForm">
+                <h2>New Waiter Information</h2>
+                <div class="formInputs">
+                    <div class="formInput">
+                        <label for="NameInput" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="NameInput" placeholder="New Waiter Name">
+                    </div>
+                    <div class="formInput">
+                        <label for="HoursInput" class="form-label">Hours</label>
+                        <input type="number" class="form-control" id="HoursInput" placeholder="Total Hours" step="0.25">
+                    </div>
+                </div>
+                <div class="formOption">
+                    <label for="WaiterType" class="form-label">Waiter Type</label>
+                    <select id="WaiterType" class="form-select">
+                        <option id="defaultType" selected>Waiter</option>
+                        <option>Runner</option>
+                    </select>
+                </div>
+                <div class="flex" id="NewWaiterBtns">
+                    <button type="submit" id="ConfirmNewWaiter" class="MyButton"">Add</button>
+                <button role=" button" id="CancelWaiterBtn" class="MyButton">Cancel</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="money" class="rounded">
+            <div id="listHeader">
+                <h2 class="container">Tips</h2>
+                <button class="MyButton" id="weekendBtn" role="button">Midweek</button>
+            </div>
+            <div class="coinBar">
+                <div class="coin rounded">One</div>
+                <div class="buttons rounded">
+                    <span class="decBtn rounded">-</span>
+                    <span class="num">0</span>
+                    <span class="incBtn rounded">+</span>
+                </div>
+            </div>
+            <div class="coinBar">
+                <div class="coin rounded">Two</div>
+                <div class="buttons rounded">
+                    <span class="decBtn rounded">-</span>
+                    <span class="num">0</span>
+                    <span class="incBtn rounded">+</span>
+                </div>
+            </div>
+            <div class="coinBar">
+                <div class="coin rounded">Five</div>
+                <div class="buttons rounded">
+                    <span class="decBtn rounded">-</span>
+                    <span class="num">0</span>
+                    <span class="incBtn rounded">+</span>
+                </div>
+            </div>
+            <div class="coinBar">
+                <div class="coin rounded">Ten</div>
+                <div class="buttons rounded">
+                    <span class="decBtn rounded">-</span>
+                    <span class="num">0</span>
+                    <span class="incBtn rounded">+</span>
+                </div>
+            </div>
+            <div class="coinBar">
+                <div class="coin rounded">Twenty</div>
+                <div class="buttons rounded">
+                    <span class="decBtn rounded">-</span>
+                    <span class="num">0</span>
+                    <span class="incBtn rounded">+</span>
+                </div>
+            </div>
+            <div class="coinBar">
+                <div class="coin rounded">Fifty</div>
+                <div class="buttons rounded">
+                    <span class="decBtn rounded">-</span>
+                    <span class="num">0</span>
+                    <span class="incBtn rounded">+</span>
+                </div>
+            </div>
+            <div class="coinBar">
+                <div class="coin rounded">One Hundred</div>
+                <div class="buttons rounded">
+                    <span class="decBtn rounded">-</span>
+                    <span class="num">0</span>
+                    <span class="incBtn rounded">+</span>
+                </div>
+            </div>
+            <div class="coinBar">
+                <div class="coin rounded">Two Hundred</div>
+                <div class="buttons rounded">
+                    <span class="decBtn rounded">-</span>
+                    <span class="num">0</span>
+                    <span class="incBtn rounded">+</span>
+                </div>
+            </div>
+            <div class="MyButton" id="calBtn">Calculate</div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+    <script src="Demo.js"></script>
+    <script src="calculation.js"></script>
+    <script src="DemoBig.js"></script>
+</body>
+
+</html>
